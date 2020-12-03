@@ -1,0 +1,149 @@
+html, body{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    font-weight: 300;
+    width: 100vw;
+    background-color: rgb(49, 48, 48);
+    overflow: hidden;
+}
+
+section{
+    position: relative;
+    background: url('images/bg-mobile.PNG');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    height: 100%;
+}
+
+
+h1{
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+    font-size: 7vw;
+    font-weight: 300;
+}
+
+
+.square{
+    width: 120%;
+   margin: 0;
+   padding: 0;
+   height: 100%;
+}
+
+
+.icons{
+    color: white;
+    width: 35%;
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+.icons img{
+    filter: invert();
+    width: 20px;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-between;
+    margin: 8px 0;
+}
+
+
+.icon p{
+    padding: 0;
+    margin: 0;
+    font-size: 10px;
+}
+
+.pt{
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: white;
+}
+
+
+menu{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    width: 25px;
+    height: 25px;
+    float: right;
+    position: relative;
+    z-index: 1000000000;
+}
+
+.pt2_none{
+    visibility: hidden;
+}
+
+.pt8_none{
+    visibility: hidden;
+}
+
+.pt4_none{
+    visibility: hidden;
+}
+
+.pt6_none{
+    visibility: hidden;
+}
+
+menu:hover{
+    animation: animate 1s ease-in-out 
+}
+
+@media(max-width:500px){
+
+     ul{
+        position: fixed;
+        background: rgba(0, 0, 0, 0.904);
+        height: 100vh;
+        width: 100vw;
+        z-index: 100440;
+        top: -2em;
+        list-style: none;
+        padding: 10em 0;
+        clip-path: circle(10px at 100% 0%);
+        -webkit-clip-path: circle(10px at 100% 0%);
+        transition: all 1s ease-out;
+    }
+
+    .open{
+        clip-path: circle(800px at 100% 0%);
+        -webkit-clip-path: circle(800px at 100% 0%);
+    } 
+
+    ul li{
+        width: 50%;
+        margin: 0 auto;
+        text-align: right;
+        position: relative;
+        align-items: center;
+        
+    }
+
+    ul li a{
+        font-weight: 100;
+        font-size: 30px;
+        color: azure;
+        text-decoration: none;
+    }
+
+
+}
+
+
+

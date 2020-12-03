@@ -28,26 +28,35 @@ menu.addEventListener('click', function() {
 
 })
 
-const countDownDate = new Date("Dec 02, 2020 00:00:00").getTime();
+
+const countDownDate = new Date("Dec 31, 2020 00:00:00").getTime();
 
 console.log(countDownDate)
 
 const countDownFunction = setInterval(function () {
-    const now = new Date().getSeconds();
+    const now = new Date().getTime();
 
 
     const distance = countDownDate - now;
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24))
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-    const minutes = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000))
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    second.innerHTML = new Date().getSeconds();
-    minute.innerHTML = new Date().getMinutes();
-    hour.innerHTML = new Date().getHours();
-    milisecond.innerHTML = new Date().getUTCMilliseconds();
-    let dayNew = new Date().getDay();
-    day.innerHTML = dayNew - 1
+    second.innerHTML = seconds
+    minute.innerHTML = minutes
+    hour.innerHTML = hours
+    day.innerHTML = days
+
+
+    if (distance < 0) {
+        clearInterval(countDownFunction)
+        second.innerHTML = '00'
+        minute.innerHTML = '00'
+        hour.innerHTML = '00'
+        day.innerHTML = '00'
+    }
+    
 
 })
