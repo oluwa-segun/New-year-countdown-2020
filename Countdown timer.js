@@ -11,9 +11,14 @@ const pt2 = document.querySelector('.pt2')
 const pt4 = document.querySelector('.pt4')
 const pt6 = document.querySelector('.pt6')
 const pt8 = document.querySelector('.pt8')
-console.log(pt2)
-console.log(navItems)
+const copy = document.querySelector('#copy')
 
+
+
+copy.addEventListener('click', (e) =>{
+    copy.textContent = 'copied!'
+    copy.classList.toggle('copied')
+})
 
 menu.addEventListener('click', function() {
     console.log("object")
@@ -43,7 +48,9 @@ const countDownFunction = setInterval(function () {
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    const miliseconds = Math.floor((distance % (1000 * 60)));
 
+    milisecond.innerHTML = miliseconds
     second.innerHTML = seconds
     minute.innerHTML = minutes
     hour.innerHTML = hours

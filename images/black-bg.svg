@@ -1,21 +1,19 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1114.28" height="1447.512" viewBox="0 0 1114.28 1447.512">
+<svg xmlns="http://www.w3.org/2000/svg" width="1115.491" height="1449.886" viewBox="0 0 1115.491 1449.886">
   <defs>
     <style>
       .cls-1 {
         fill: rgba(0,0,0,0.94);
       }
 
-      .cls-2, .cls-3 {
-        stroke: none;
-      }
-
-      .cls-3 {
-        fill: #fff;
+      .cls-2 {
+        fill: none;
+        stroke: #fff;
+        stroke-width: 5px;
       }
     </style>
   </defs>
-  <g id="Path_4" data-name="Path 4" class="cls-1" transform="translate(0 347.512)">
-    <path class="cls-2" d="M 1111.779907226563 1097.5 L 2.50007438659668 1097.5 L 2.50007438659668 1.838968396186829 L 1111.779907226563 -344.1140441894531 L 1111.779907226563 1097.5 Z"/>
-    <path class="cls-3" d="M 1109.279663085938 -340.7154541015625 L 4.9998779296875 3.67816162109375 L 4.9998779296875 1095 L 1109.279663085938 1095 L 1109.279663085938 -340.7154541015625 M 1114.279663085938 -347.512451171875 L 1114.279663085938 1100 L -0.0001220703125 1100 L -0.0001220703125 -6.103515625e-05 L 1114.279663085938 -347.512451171875 Z"/>
+  <g id="Group_21" data-name="Group 21" transform="translate(-2055.755 -2470.114)">
+    <path id="Path_4" data-name="Path 4" class="cls-1" d="M0,0,1114.28-347.512V1100H0Z" transform="translate(2056.309 2820)"/>
+    <line id="Line_1" data-name="Line 1" class="cls-2" x1="1114" y2="348" transform="translate(2056.5 2472.5)"/>
   </g>
 </svg>
