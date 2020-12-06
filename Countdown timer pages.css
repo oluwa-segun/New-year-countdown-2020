@@ -10,7 +10,19 @@ html, body{
     color: white;
 }
 
- article p{
+.ig, .twitter, .mail{
+    filter: invert();
+    width: 19px;
+    padding-right: 18px;
+    transition: 0.5s ease-in-out;
+}
+
+.ig:hover, .twitter:hover, .mail:hover{
+    transform: rotate(10deg);
+    transform: rotate(-10deg);
+}
+
+article{
     text-align: left;
     position: relative;
     color: wheat;
@@ -18,7 +30,7 @@ html, body{
     top: 25em;
     width: 80%;
     margin: 0 auto;
-    
+    z-index: 1000;
 } 
 
 section{
@@ -51,6 +63,7 @@ h1{
    padding: 0;
    height: 85%;
    bottom: 0;
+   z-index: -1111;
 }
 
 
