@@ -75,9 +75,13 @@ h1{
     right: 5%;
 }
 
-.icons img{
+.icons .img{
     filter: invert();
     width: 20px;
+}
+
+.icons .hash{
+ width: 20px;
 }
 
 .icon{

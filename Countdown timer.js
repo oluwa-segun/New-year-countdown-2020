@@ -12,16 +12,17 @@ const pt4 = document.querySelector('.pt4')
 const pt6 = document.querySelector('.pt6')
 const pt8 = document.querySelector('.pt8')
 const copy = document.querySelector('#copy')
+const notReadyYet = document.querySelector('.loading')
+console.log(notReadyYet)
 
 
+notReadyYet.addEventListener('click', (e) =>{
+    alert("Article will be ready soon..")
+})
 
 copy.addEventListener('click', (e) =>{
     copy.textContent = 'copied!'
-
 })
-
-
-
 
 function copyText() {
     const textToCopy = "bit.ly/3IL2VKH"

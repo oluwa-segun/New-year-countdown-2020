@@ -6,6 +6,23 @@ const pt2 = document.querySelector('.pt2')
 const pt4 = document.querySelector('.pt4')
 const pt6 = document.querySelector('.pt6')
 const pt8 = document.querySelector('.pt8')
+const notReadyYet = document.querySelector('.loading')
+
+ console.log(notReadyYet)
+
+
+notReadyYet.addEventListener('click', (e) => {
+     alert("Article will be ready soon..")
+})
+
+
+
+
+
+
+
+
+
 
 console.log(pt2)
 console.log(navItems)
